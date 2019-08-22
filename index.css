@@ -1,0 +1,258 @@
+h1, h2, p, label
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+input,
+textarea,
+.select-article
+{
+	border: 1px solid #2249ef;
+	height: 40px;;
+}
+
+input::placeholder
+{
+	padding: 2px;
+}
+textarea::placeholder
+{
+	padding: 12px 2px;
+}
+
+#content,
+#imageContent,
+#message
+{
+	display: none;
+}
+
+#message
+{
+	color: red;
+}
+
+#added-content p
+{
+	color: #fff;
+	margin: 0 auto;
+	padding: 10px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	height: 180px;
+	display: grid;
+	align-items: center;
+}
+
+.container
+{
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.row
+{
+	display: flex;
+}
+
+header
+{
+	background: #2249ef;
+	text-align: center;
+	height: 110px;
+    width: 100%;
+}
+
+header p
+{
+	color: #38a1e3;
+	font-weight: bold;
+    margin: 0 auto;
+}
+
+header img
+{
+	width: 140px;
+	float: left;
+	position: relative;
+	margin: 0px 15px 15px 100px;
+}
+
+main h2
+{
+	font-weight: bolder;
+	font-size: 35px;
+	margin: 0 45px 45px 45px;
+    white-space: nowrap;
+    border-bottom: 5px solid #1ED6B3;
+
+}
+
+main p.sub-title
+{
+	margin: 10px 45px;
+}
+
+main span
+{
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+}
+
+main div select
+{
+	display: block;
+	width: 100px;
+	height: 40px;
+	border: none;
+	background: #fff;
+}
+
+main button.add,
+main button.remove
+{
+	width: 25px;
+	height: 25px;
+	color: #000;
+	margin-top: 40px;
+	border-radius: 50%; 
+	background: #fff;
+	border: 1px solid gray;
+}
+
+main button
+{
+	border: none;
+    width: 140px;
+	height: 40px;
+	float: right;
+	color: #fff;
+	transition: .5s;
+	cursor: pointer;
+	margin-bottom: 20px;
+	background: #ff169b;
+}
+
+/*main button:hover
+{
+	color: #fff;
+	background: #2841f9;
+}*/
+
+main article
+{
+	margin: 10px;
+	display: inline-block;
+}
+
+main article:first-child
+{
+	margin-left: 45px;
+}
+
+main article label
+{
+	display: block;
+	white-space: nowrap;
+}
+
+footer
+{
+	background: #2249ef;
+	text-align: center;
+	height: 50px;
+	clear: both;
+	width:100%;
+}
+
+footer img
+{
+	width: 72px;
+}
+
+button#addRow
+{
+	margin-right: 26px;
+	margin-top: 30px;
+}
+
+#image-case
+{
+	height: 44px;
+}
+
+input[type=file]::placeholder
+{
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	main span img
+	{
+		width: 100% !important;	
+	}
+
+	main article
+	{
+		display: block;
+		margin: 10px 0;
+	}
+
+	input,
+	.select-article,
+	main article label,
+	textarea
+	{
+		width: 99%;
+	}
+
+	.row
+	{
+		/* margin-left: 45px; */
+		margin-top: 10px;
+	}
+	
+	main article:first-child 
+	{
+		width: 100px;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	main article.text-case,
+	main article.image-case
+	{
+		width: 100%;
+	}
+
+	#register,
+	#imageRegister
+	{
+		position: absolute;
+		left: calc(50% - 20px);
+		margin-top: 0px;
+	}
+	
+	button#addRow
+	{
+		float: none;
+		width: 100%;
+		margin-top: 35px;
+	}
+
+	main h2
+	{
+		white-space: normal;
+		margin: 0;
+		width: 100%;
+	}
+
+	main p.sub-title
+	{
+		margin: 10px 0;
+	}
+
+
+  }
